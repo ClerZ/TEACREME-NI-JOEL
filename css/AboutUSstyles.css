@@ -22,7 +22,7 @@ html{
 /* NAVIGATION BAR PAGE SECTION*/
 
 .main-header{
-    position:relative;
+    position:fixed;
     display: flex;
     top: 0;
     left: 0;
@@ -42,7 +42,8 @@ html{
     width: 100%;
     height: 6.5vw;
     z-index: -1; /* Ensure the image is behind the content */
-    opacity: 20;
+    background-color: #15154E;
+    opacity: .5;
 }
 
 .main-logo{
@@ -61,6 +62,12 @@ html{
     margin-top: -.6vw;
     cursor: pointer;
     font-size: 1.8vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickable-name{
+    color: #F9F6EE;
 }
 
 .main-logo{
@@ -105,12 +112,18 @@ nav ul li a{
     color: #8E8EDB;
 }
 
+.about-us-conntainer{
+    position: relative;
+    display: flex;
+    margin-top: 7.5vw;
+}
+
 .about-us-picture-container {
     position:static;
     display:block;
     width: 50vw;
     height: 35vw;
-    margin-top: 10rem;
+    margin-top: 2.5rem;
     background-color: rgba(217, 217, 217, 0.025); /* Use rgba for transparency (adjust the last value for opacity) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow (adjust values as needed) */
     
@@ -127,44 +140,46 @@ nav ul li a{
 
 .about-us-text-container{
     display: block;
-    padding-top: 10vw;
-    padding-left: 9vw;
-}
-
-.about-us-conntainer{
-    position: relative;
-    display: flex;
+    padding-top: 3.5vw;
+    padding-left: 6.5vw;
 }
 
 .aboutus-main-text{
+    position: relative;;
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     color: #F9F6EE;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
     font-size: 5vw;
-    padding-bottom: 5.85rem;
+    padding-bottom: 5.85vw;
+    top: -1vw;
+    left: 0.8vw;
 }
 
 .divider-line{
     position: relative;
-    left: -3.4rem;
-    top: -4.5rem;
-    width: 44vw;
+    left: -2.2vw;
+    top: -5.8vw;
+    width: 40vw;
 }
 
 .aboutus-sub-text{
+    position: relative;
     font-family: 'Outfit', sans-serif;
-    font-weight: 100;
+    font-weight: 0;
     color: #F9F6EE;
-    font-size: 1.75vw;
-    line-height: 1.80rem;
+    font-size: 1.6vw;
+    line-height: 1.80vw;
+    top: -2vw;
+    left: 0.8vw;
+    letter-spacing: .09vw;
 }
 
 
 .WhatsOurStory {
     position: relative;
     width: 100%;
-    height: 120vw; /* Adjust the height based on your design needs */
+    height: 52vw; /* Adjust the height based on your design needs */
     overflow: hidden;
   }
 
@@ -182,4 +197,67 @@ nav ul li a{
 
 .story-info{
     position: absolute;
+}
+
+
+/*Story description*/
+
+.story-info{
+    position: relative;
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #F9F6EE;
+    font-size: 5vw;
+    top: 12vw;
+    left: 10vw;
+}
+
+.divider-line2{
+    position: relative;
+    top: 13vw;
+    left: 9.8vw;
+    width: 40.2vw;
+    height: .4vw;
+}
+
+.scrollable-description{
+    position: relative;
+    padding-top: 16.4vw;
+    padding-left: 5vw;
+}
+
+.scrollable-container {
+    position: relative;
+    width: 52vw;
+    max-width: 100%; /* Allow content to scale within the viewport width */
+    height: 20vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+/* Style the scrollbar in WebKit browsers */
+.scrollable-container::-webkit-scrollbar {
+    width: .5vw; /* Set the width of the scrollbar */
+    padding-left: 2vw;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #8E8EDB; /* Set the color of the thumb */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background-color: #15154E; /* Set the color of the track */
+}
+
+
+.story-description{
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    color: #F9F6EE;
+    font-size: 1.6vw;
+    width: 50vw;
+    overflow: hidden;
 }

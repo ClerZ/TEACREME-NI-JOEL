@@ -22,7 +22,7 @@ html{
 /* NAVIGATION BAR PAGE SECTION*/
 
 .main-header{
-    position:relative;
+    position:fixed;
     display: flex;
     top: 0;
     left: 0;
@@ -42,13 +42,18 @@ html{
     width: 100%;
     height: 6.5vw;
     z-index: -1; /* Ensure the image is behind the content */
-    opacity: 20;
+    background-color: #15154E;
+    opacity: .5;
 }
 
 .main-logo{
     max-width: 95vw;
     max-height: 95vw;
     margin-top: -4;
+}
+
+.clickable-name{
+    color: #F9F6EE;
 }
 
 .business-name {
@@ -98,7 +103,7 @@ nav ul li a{
 }
 
 .main-title-container{
-    margin-top: -6vw;
+    margin-top: 2vw;
 }
 
 /* TAGLINE TEXT CODE RIGHT BELLOW */
@@ -391,9 +396,9 @@ nav ul li a{
 
 .place-image{
     position: absolute;
-    top: 96vw;
-    left: 8vw;
-    width: 50vw;
+    top: 95.25vw;
+    left: 6.5vw;
+    width: 52vw;
 }
 
 .rounded-upper-right-square {
